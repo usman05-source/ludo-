@@ -1,0 +1,53 @@
+body {
+    display: flex; /* Froggy Level 1-5 concept used for centering */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+.ludo-board {
+    display: grid; /* Grid system for 3x3 layout */
+    grid-template-columns: 150px 90px 150px;
+    grid-template-rows: 150px 90px 150px;
+    border: 2px solid #000;
+}
+
+/* Houses Styling */
+.house {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #000;
+}
+
+.red { background: red; }
+.yellow { background: gold; }
+.green { background: green; }
+.blue { background: blue; }
+
+/* Center Home */
+.home {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Path Grids */
+.path-v, .path-h {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+    border: 1px solid #000;
+    width: 30px;
+    height: 30px;
+}
